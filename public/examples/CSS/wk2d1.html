@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+<html><head>
+    <title> </title>
+
+    <style>
+        html,
+        body {
+            width: 64%;
+            height: 100%;
+        }
+        .inline {
+            display: inline;
+            color: red;
+        }
+        .block {
+            display: inline-block;
+        }
+        .enlarge{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        main,
+        header,
+        footer,
+        nav,
+        section,
+        article,
+        aside {
+            padding: 3px;
+            border: 1px solid black;
+            margin: 2px;
+            text-align: center;
+
+        }
+        content,
+        {
+            float:left;
+        }
+        aside{
+            float:right
+        }
+        footer{
+            clear:right;
+            clear:left;
+        }
+    </style>
 </head>
+
 <body>
-$END$
-</body>
-</html>
+
+<main class="">
+    <header>&lt;Header&gt;</header>
+    <nav>&lt;Nav&gt;</nav>
+    <content class="block">
+        <section>&lt;Section&gt;</section>
+        <article>&gt;Article&gt;</article>
+    </content>
+    <aside class="block enlarge">&lt;Aside&gt;</aside>
+
+    <footer>&lt;Footer&gt;</footer>
+</main>
+
+
+
+
+
+
+</body></html>
